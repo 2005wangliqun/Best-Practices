@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="hhahahhaha">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la9-LA-fMT">
+                                <rect key="frame" x="124.66666666666669" y="670" width="125" height="30"/>
+                                <color key="backgroundColor" red="0.29492779120000001" green="1" blue="0.18100760760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" red="0.29492779120000001" green="1" blue="0.18100760760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="butttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNI-N7-7v4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJH-uW-8SB" userLabel="a long label">
+                                <rect key="frame" x="124.66666666666669" y="740" width="125" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95301852154723865" blue="0.1072540254116866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="a long long button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qM9-ir-rHG">
+                                <rect key="frame" x="37.666666666666657" y="94" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5iP-QP-xTu"/>
+                                </constraints>
+                                <string key="text">You might see a red circle with an arrow in it on the top left. Usually, this indicates an issue that you need to fix. Don’t worry about this for now, as you’ll fix it later. :]</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjo-Tt-eHa">
+                                <rect key="frame" x="38" y="135" width="299.66666666666669" height="21"/>
+                                <string key="text">This toggles between a long title and a short title for the button that triggered the event. Connect this action method to both of the buttons in Interface Builder. Ctrl-drag from each button to the view controller and select buttonTapped: in the popup</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sjo-Tt-eHa" firstAttribute="top" secondItem="qM9-ir-rHG" secondAttribute="bottom" constant="20" id="9PR-yJ-yIX"/>
+                            <constraint firstItem="xJH-uW-8SB" firstAttribute="trailing" secondItem="la9-LA-fMT" secondAttribute="trailing" id="Eyl-Ya-hpD"/>
+                            <constraint firstItem="qM9-ir-rHG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="NvW-0q-YLQ"/>
+                            <constraint firstItem="qM9-ir-rHG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O3u-Ko-zsC"/>
+                            <constraint firstItem="xJH-uW-8SB" firstAttribute="width" secondItem="la9-LA-fMT" secondAttribute="width" id="Xnd-if-izF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xJH-uW-8SB" secondAttribute="bottom" constant="8" id="bLl-9u-4X4"/>
+                            <constraint firstItem="la9-LA-fMT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1h-kC-Dtg"/>
+                            <constraint firstItem="Sjo-Tt-eHa" firstAttribute="width" secondItem="qM9-ir-rHG" secondAttribute="width" id="k1Y-cD-UBd"/>
+                            <constraint firstItem="Sjo-Tt-eHa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tgf-br-Crq"/>
+                            <constraint firstItem="xJH-uW-8SB" firstAttribute="top" secondItem="la9-LA-fMT" secondAttribute="bottom" constant="40" id="zBH-k2-xh1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
